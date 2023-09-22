@@ -1,32 +1,71 @@
-body,
-html,
-* {
- font-size: 10px;
- box-sizing : border-box;
-margin: 0;
-padding: 0;
-}
-.card{
-    height:50vh;
-    width: 27vw;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    margin: 2% 2% 2% 2%;
-    background-color: red;
-}
-.card-img{
-   width:100%
-}
-.card-title{
-    font-size: 3.5rem;
-}
-.card-desc{
-    font-size: 2rem;
-}
-.container {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-    background-color: lightcoral;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Your Custom Font', sans-serif;
+            background-color: #E2D6AF;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #4f1bfb;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            width: calc(33.33% - 20px); 
+            box-sizing: border-box; 
+        }
+
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card-img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card-desc {
+            font-size: 16px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">         
+    <div class="card">
+        <h2 class="card-title">Card 1</h2>
+        <img src="img/gummybears.jpg" alt="Gummy Bears" class="card-img">
+        <p class="card-desc">Description for Card 1</p>
+    </div>
+    <div class="card">
+        <h2 class="card-title">Card 2</h2>
+        <img src="img/gummybears.jpg" alt="Gummy Bears" class="card-img">
+        <p class="card-desc">Description for Card 2</p>
+    </div>
+    <div class="card">
+        <h2 class="card-title">Card 3</h2>
+        <img src="img/gummybears.jpg" alt="Gummy Bears" class="card-img">
+        <p class="card-desc">Description for Card 3</p>
+    </div>
+    <!-- Repeat the structure for other cards -->
+</div>
+</body>
+</html>
