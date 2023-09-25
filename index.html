@@ -1,79 +1,167 @@
 <html lang="en">
+
 <head>
-    <h1>PAMIS FAV ARTISTS</h1>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <h1 class="centered-heading">    PAMIS FAV ARTISTS   </h1>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Indie Flower', cursive;
+            background-image: url('back.jpg');
+            color: whitesmoke;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 80px;
+            margin-top: 50px;
+            color: #fb00ff;
+        }
+
+
+        .card {
+            position: relative;
+            text-align: center;
+            background-color: dimgray border: 2px solid #c300ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(1, 2, 1, 0.483)
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 30px;
+            margin-top: 10px;
+            color: #ebe2ef;
+        }
+
+
+
+        .card .card-desc {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(46, 50, 250, 0.483);
+            color: white;
+            padding: 10px;
+        }
+
+        .card:hover .card-desc {
+            display: block;
+        }
+    </style>
+
 </head>
+
 <body>
-<div class="container">         
+    <div class="container">
+        <div class="card">
+            <h2 class="card-title">TRAVIS SCOTT</h2>
+            <img src=".vscode/Trav.jpeg" alt="Travis" class="card-img">
+            <h3 class="card-desc">Travis Scott, whose real name is Jacques Webster II,
+                is an American rapper, singer, songwriter, and record producer. He is known for his
+                contributions to the hip-hop and rap genres and is recognized for his unique style
+                and innovative approach to music.</h3>
+        </div>
+        <div class="card">
+            <h2 class="card-title">DRAKE</h2>
+            <img src=".vscode/Drake.jpeg" alt="drake" class="card-img">
+            <h3 class="card-desc">Drake, whose full name is Aubrey Drake Graham,
+                is a Canadian rapper, singer, songwriter, actor, and entrepreneur.
+                He is one of the most prominent and successful figures in the music industry.
+                Drake first gained recognition as an actor on the teen drama series "Degrassi: The Next Generation."
+                However, he is best known for his contributions to the music industry.</h3>
+        </div>
+        <div class="card">
+            <h2 class="card-title">KANYE</h2>
+            <img src=".vscode/ye.jpeg" alt="ye" class="card-img">
+            <h3 class="card-desc">Kanye West, whose full name is Kanye Omari West,
+                is a highly influential and well-known American rapper, singer, songwriter,
+                record producer, fashion designer, and entrepreneur. He is one of the most prominent
+                figures in the music and entertainment industry.</h3>
+        </div>
+        <div class="card">
+            <h2 class="card-title">ABOOGIE</h2>
+            <img src=".vscode/Ab.jpeg" alt="AB" class="card-img">
+            <h3 class="card-desc">A Boogie wit da Hoodie, whose real name is Artist Julius Dubose,
+                is an American rapper, singer, and songwriter. He is known for his contributions
+                to the hip-hop and rap genres and has gained recognition for his unique style and
+                successful music career.</h3>
+        </div>
+        <div class="card">
+            <h2 class="card-title">NLE CHOPPA</h2>
+            <img src=".vscode/Nle.jpeg" alt="gummyies" class="card-img">
+            <h3 class="card-desc">NLE Choppa, whose real name is Bryson Potts,
+                is an American rapper and songwriter. He gained recognition for his
+                contributions to the hip-hop and rap genres and is known for his distinctive
+                style and energetic music.</h3>
+        </div>
+        <div class="card">
+            <h2 class="card-title">WEEKND</h2>
+            <img src=".vscode/week.jpg" alt="gummyies" class="card-img">
+            <h3 class="card-desc">The Weeknd, whose real name is Abel Makkonen Tesfaye,
+                is a Canadian singer, songwriter, and record producer. He is one of the most
+                acclaimed and successful artists in the music industry.</h3>
+        </div>
+        <div class="card">
+            <h2 class="card-title">POPSMOKE</h2>
+            <img src=".vscode/pop.jpg.webp" alt="gummyies" class="card-img">
+            <h3 class="card-desc">Pop Smoke, whose real name is Bashar Barakah Jackson,
+                was an American rapper and songwriter. He was a rising star in the hip-hop and
+                rap music scene but tragically passed away in February 2020.</h3>
+        </div>
+        <div class="card">
+            <h2 class="card-title">MGK</h2>
+            <img src=".vscode/mgk.jpeg" alt="gummyies" class="card-img">
+            <h3 class="card-desc">Machine Gun Kelly, often abbreviated as MGK,
+                is the stage name of Colson Baker, an American rapper, singer, songwriter,
+                and actor. He is known for his work in the hip-hop and alternative rock genres
+                and has established himself as a versatile artist in the music and entertainment industry.</h3>
+        </div>
+        <div class="card">
+            <h2 class="card-title">NAV</h2>
+            <img src=".vscode/Nav.jpeg" alt="gummyies" class="card-img">
+            <h3 class="card-desc">Nav, whose real name is Navraj Singh Goraya,
+                is a Canadian rapper, singer, songwriter, and record producer.
+                He is known for his contributions to the hip-hop and rap genres
+                and has gained recognition for his unique style and production skills.</h3>
+        
+            </div>
+       
+       
+            </div>
+            <div class="container">
     <div class="card">
-        <h2 class="card-title">TRAVIS SCOTT</h2>
-        <img src=".vscode/Trav.jpeg"alt="Travis" class="card-img">
-        <h3 class="card-desc">.</h3>
+        <h2 class="card-title">PLAYBOI CARTI</h2>
+        <img src="carti.jpeg" alt="ye" class="card-img">
+        <h3 class="card-desc">Playboi Carti, whose real name is Jordan Terrell Carter,
+            is an American rapper, singer, and songwriter. He is known for his distinctive style
+            and contributions to the hip-hop and rap genres.</h3>
     </div>
     <div class="card">
-        <h2 class="card-title">DRAKE</h2>
-        <img src=".vscode/Drake.jpeg"alt="drake" class="card-img">
-        <h3 class="card-desc">.</h3>
+        <h2 class="card-title">KENDRICK LAMAR</h2>
+        <img src="lamar.jpg.webp" alt="ye" class="card-img">
+        <h3 class="card-desc">Kendrick Lamar, whose full name is Kendrick Lamar Duckworth,
+            is an American rapper, songwriter, and record producer. He is widely regarded
+            as one of the most talented and influential artists in the hip-hop and rap music genres.</h3>
     </div>
     <div class="card">
-        <h2 class="card-title">YE</h2>
-        <img src=".vscode/ye.jpeg"alt="ye" class="card-img">
-        <h3 class="card-desc">.</h3>
+        <h2 class="card-title">YEAT</h2>
+        <img src="yeat.jpg" alt="ye" class="card-img">
+        <h3 class="card-desc">Yeat, whose real name is Jayquan, is an American rapper and songwriter.
+            He's known for his contributions to the SoundCloud rap and underground hip-hop scene.
+            Yeat gained recognition for his distinct style and energetic tracks.</h3>
     </div>
-    <div class="card">
-        <h2 class="card-title">ABOOGIE</h2>
-        <img src=".vscode/Ab.jpeg"alt="AB" class="card-img">
-        <h3 class="card-desc">.</h3>
-    </div>
-    <div class="card">
-        <h2 class="card-title">NLE CHOPPA</h2>
-        <img src=".vscode/Nle.jpeg"alt="gummyies" class="card-img">
-        <h3 class="card-desc">.</h3>
-    </div>
-    <div class="card">
-        <h2 class="card-title">WEEKND</h2>
-        <img src=".vscode/week.jpg"alt="gummyies" class="card-img">
-        <h3 class="card-desc">.</h3>
-    </div>
-    <div class="card">
-        <h2 class="card-title">POPSMOKE</h2>
-        <img src=".vscode/pop.jpg.webp"alt="gummyies" class="card-img">
-        <h3 class="card-desc">.</h3>
-    </div>
-    <div class="card">
-        <h2 class="card-title">MGK</h2>
-        <img src=".vscode/mgk.jpeg"alt="gummyies" class="card-img">
-        <h3 class="card-desc">.</h3>
-    </div>
-    <div class="card">
-        <h2 class="card-title">NAV</h2>
-        <img src=".vscode/Nav.jpeg"alt="gummyies" class="card-img">
-        <h3 class="card-desc">.</h3>
-  </div>
-</div>
-</div>
-<div class="card">
-    <h2 class="card-title">YE</h2>
-    <img src=".vscode/ye.jpeg"alt="ye" class="card-img">
-    <h3 class="card-desc">.</h3>
-</div>
-</div>
-<div class="card">
-    <h2 class="card-title">YE</h2>
-    <img src=".vscode/ye.jpeg"alt="ye" class="card-img">
-    <h3 class="card-desc">.</h3>
-</div>
-</div>
-<div class="card">
-    <h2 class="card-title">YE</h2>
-    <img src=".vscode/ye.jpeg"alt="ye" class="card-img">
-    <h3 class="card-desc">.</h3>
-</div>
-   
- </body>
+    <div class="container">
+</body>
+
 </html>
