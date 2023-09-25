@@ -1,26 +1,18 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage</title>
     <link rel="stylesheet" href="style.css">
-    
- 
-
     <style>
-        body {
-            font-family: 'Your Custom Font', sans-serif;
-            background-color: #E2D6AF;
-            margin: 0;
-            padding: 0;
-
-         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath data-color='outline' fill='none' stroke='%23D627FF' stroke-width='5' d='M0 0h100v50H0zM-50 50h100v50h-100zM50 50h100v50h-100z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
-         background-size: cover;
-         background-position: center;
-         background-repeat: no-repeat;
-        }
+    body {
+        background-color: #000000;
+        background-image: url('back.jpg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
         .container {
             display: flex;
@@ -33,11 +25,11 @@
         .card {
             background-color: #4f1bfb;
             border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(166, 0, 255, 0.1);
             text-align: center;
-            padding: 20px;
-            width: calc(33.33% - 20px); 
-            box-sizing: border-box; 
+            padding: 10px;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
         }
 
         .card-title {
@@ -46,37 +38,18 @@
         }
 
         .card-img {
-            max-width: 100%;
-            border-radius: 10px;
+            max-width: 50%;
+            border-radius: 5px;
         }
 
         .card-desc {
-            font-size: 16px;
+            font-size: 20px;
             color: #ffffff;
-            
-
-
         }
     </style>
 </head>
 <body>
-<div class="container">         
-    <div class="card">
-        <h2 class="card-title">Card 1</h2>
-        <img src="img/gummybears.jpg" alt="Gummy Bears" class="card-img">
-        <p class="card-desc">Description for Card 1</p>
-    </div>
-    <div class="card">
-        <h2 class="card-title">Card 2</h2>
-        <img src="img/gummybears.jpg" alt="Gummy Bears" class="card-img">
-        <p class="card-desc">Description for Card 2</p>
-    </div>
-    <div class="card">
-        <h2 class="card-title">Card 3</h2>
-        <img src="img/gummybears.jpg" alt="Gummy Bears" class="card-img">
-        <p class="card-desc">Description for Card 3</p>
-    </div>
-    <!-- Repeat the structure for other cards -->
+
 </div>
 </body>
 </html>
