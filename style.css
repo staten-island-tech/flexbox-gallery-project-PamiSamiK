@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage</title>
     <link rel="stylesheet" href="style.css">
-    <style>
+
     body {
         background-color: #000000;
         background-image: url('back.jpg'); 
@@ -25,7 +25,7 @@
         .card {
             background-color: #4f1bfb;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(166, 0, 255, 0.1);
+            box-shadow: 10px 5px 5px rgb(169, 145, 255);;
             text-align: center;
             padding: 10px;
             width: calc(33.33% - 20px);
@@ -46,7 +46,7 @@
             font-size: 20px;
             color: #ffffff;
         }
-    </style>
+
 </head>
 <body>
 
