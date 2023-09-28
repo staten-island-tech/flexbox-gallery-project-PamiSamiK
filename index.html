@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h1 class="centered-heading">    PAMIS FAV ARTISTS   </h1>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -16,6 +15,7 @@
             font-family: 'Indie Flower', cursive;
             background-image: url('back.jpg');
             color: whitesmoke;
+            box-sizing: border-box;
         }
 
         h1 {
@@ -31,21 +31,32 @@
         .card {
             position: relative;
             text-align: center;
-            background-color: dimgray border: 2px solid #c300ff;
+            background-color: #4f1bfb;
             border-radius: 10px;
             box-shadow: 10px 5px 5px rgb(169, 145, 255);
             text-align: center;
+            width:21%;
+            height:10%
+            overflow: hidden;
         }
-
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
         .card-title {
             font-size: 30px;
             margin-top: 10px;
             color: #ebe2ef;
         }
 
+        .card-img {
+            width: 80%;
+        }
 
-
-        .card .card-desc {
+        .card-desc {
             display: none;
             position: absolute;
             top: 0;
@@ -55,6 +66,7 @@
             background: rgba(46, 50, 250, 0.483);
             color: white;
             padding: 10px;
+
         }
 
         .card:hover .card-desc {
@@ -140,8 +152,7 @@
             </div>
        
        
-            </div>
-            <div class="container">
+            
     <div class="card">
         <h2 class="card-title">PLAYBOI CARTI</h2>
         <img src="carti.jpeg" alt="ye" class="card-img">
@@ -163,7 +174,7 @@
             He's known for his contributions to the SoundCloud rap and underground hip-hop scene.
             Yeat gained recognition for his distinct style and energetic tracks.</h3>
     </div>
-    <div class="container">
+</div>
 </body>
 
 </html>

@@ -1,55 +1,63 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
-    <link rel="stylesheet" href="style.css">
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+    background-image: url('back.jpg');
+    color: whitesmoke;
+    box-sizing: border-box;
+}
 
-    body {
-        background-color: #000000;
-        background-image: url('back.jpg'); 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+h1 {
+    color: midnightblue;
+ filter: drop-shadow(0 0 3px magenta);
+    text-align: center;
+    font-size: 100px;
+    margin-top: 50px;
+    color: #fb00ff;
+}
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
-            padding: 20px;
-        }
 
-        .card {
-            background-color: #4f1bfb;
-            border-radius: 10px;
-            box-shadow: 10px 5px 5px rgb(169, 145, 255);;
-            text-align: center;
-            padding: 10px;
-            width: calc(33.33% - 20px);
-            box-sizing: border-box;
-        }
+.card {
+    position: relative;
+    text-align: center;
+    background-color: #4f1bfb;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(169, 145, 255);
+    text-align: center;
+    width:21vw;
 
-        .card-title {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+.card-title {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #ebe2ef;
+}
 
-        .card-img {
-            max-width: 50%;
-            border-radius: 5px;
-        }
+.card-img {
+    width: 80%;
+}
 
-        .card-desc {
-            font-size: 20px;
-            color: #ffffff;
-        }
+.card-desc {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(46, 50, 250, 0.483);
+    color: white;
+    padding: 10px;
 
-</head>
-<body>
+}
 
-</div>
-</body>
-</html>
+.card:hover .card-desc {
+    display: block;
+}
