@@ -1,80 +1,131 @@
 <html lang="en">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1 class="centered-heading">    PAMIS FAV ARTISTS   </h1>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Indie Flower', cursive;
-            background-image: url('back.jpg');
-            color: whitesmoke;
-            box-sizing: border-box;
-        }
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <h1 class="centered-heading">    PAMIS FAV ARTISTS   </h1>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+   <link href="style.css">
 
-        h1 {
-            color: midnightblue;
-         filter: drop-shadow(0 0 3px magenta);
-            text-align: center;
-            font-size: 100px;
-            margin-top: 50px;
-            color: #fb00ff;
-        }
+ 
 
+   <style>
+    body {
+       margin: 0;
+       padding: 0;
+       font-family: 'Indie Flower', cursive;
+       background-image: url('back.jpg');
+       color: whitesmoke;
+       box-sizing: border-box;
+    }
 
-        .card {
-            position: relative;
-            text-align: center;
-            background-color: #4f1bfb;
-            border-radius: 10px;
-            box-shadow: 10px 5px 5px rgb(169, 145, 255);
-            text-align: center;
-            width:21%;
-            height:10%
-            overflow: hidden;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
-            padding: 20px;
-        }
-        .card-title {
-            font-size: 30px;
-            margin-top: 10px;
-            color: #ebe2ef;
-        }
+    h1 {
+       color: midnightblue;
+       filter: drop-shadow(0 0 3px magenta);
+       text-align: center;
+       font-size: 100px;
+       margin-top: 50px;
+       color: #fb00ff;
+    }
 
-        .card-img {
-            width: 80%;
-        }
+    .card {
+       position: relative;
+       text-align: center;
+       background-color: #4f1bfb;
+       border-radius: 10px;
+       box-shadow: 10px 5px 5px rgb(169, 145, 255);
+       text-align: center;
+       width: 21%;
+       height: 10%;
+       overflow: hidden;
+       transition: all 0.33s ease;
+       border: 2px solid #fff; /* Added border for the border color change effect */
+    }
 
-        .card-desc {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(46, 50, 250, 0.483);
-            color: white;
-            padding: 10px;
+    .container {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       gap: 20px;
+       padding: 20px;
+    }
 
-        }
+    .card-title {
+       font-size: 30px;
+       margin-top: 10px;
+       color: #ebe2ef;
+    }
 
-        .card:hover .card-desc {
-            display: block;
-        }
-    </style>
+    .card-img {
+       width: 80%;
+    }
 
+    .card-desc {
+       display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background: rgba(46, 50, 250, 0.483);
+       color: white;
+       padding: 10px;
+    }
+
+    @media screen and (max-width: 900px) {
+       .menu-item {
+          width: 40%
+       }
+    }
+
+    @media screen and (max-width: 900px) {
+       .menu-item {
+          width: 100%
+       }
+    }
+
+    .card:hover .card-desc {
+       display: block;
+    }
+
+    .card:hover {
+       opacity: 0.8;
+       background-color: #fb00ff;
+       transform: scale(1.1);
+       border-color: #000000; /* Border color change on hover */
+       animation: pulse 1s infinite; /* Pulse animation */
+    }
+
+    .card:hover .card-title,
+    .card:hover .card-desc {
+       color: #ededed;
+    }
+
+    /* Animation styles */
+    @keyframes pulse {
+       0% {
+          transform: scale(1);
+       }
+       50% {
+          transform: scale(1.05);
+       }
+       100% {
+          transform: scale(1);
+       }
+    }
+ </style>
 </head>
+
+<body>
+ 
+</body>
+</html>
+
+<head></head>
 
 <body>
     <div class="container">
@@ -151,9 +202,8 @@
         
             </div>
        
-       
-            
-    <div class="card">
+
+            <div class="card">
         <h2 class="card-title">PLAYBOI CARTI</h2>
         <img src="carti.jpeg" alt="ye" class="card-img">
         <h3 class="card-desc">Playboi Carti, whose real name is Jordan Terrell Carter,
